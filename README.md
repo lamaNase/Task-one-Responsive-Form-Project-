@@ -3,7 +3,7 @@
 Welcome to the **Responsive Form Project**! 👋  
 This project demonstrates a stylish, responsive form that includes multiple input fields, custom CSS styling, and JavaScript validation.
 
-## Waltthrough Video 🎥
+## Walkthrough Video 🎥
 
 
 https://github.com/user-attachments/assets/15fba010-5a8b-4c10-b517-9c12f1672538
