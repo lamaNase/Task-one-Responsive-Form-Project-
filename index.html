@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Website 👋</h1>
+        <p>Fill in the following form</p>
+    </header>
+    <form id="myForm" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td><label for="fullName">👤 Full Name</label></td>
+                <td><input class="col2" type="text" name="fullName" id="fullName" placeholder="e.g Lama Zahi Naser" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">📧 Email</label></td>
+                <td><input class="col2" type="email" name="email" id="email" placeholder="e.g. Lamanaser@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">🔑 Password</label></td>
+                <td><input class="col2" type="password" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmPassword">🔑 Confirm Password</label></td>
+                <td><input class="col2" type="password" name="confirmPassword" id="confirmPassword" required></td>
+            </tr>
+            <tr>
+                <td><label><input type="radio" name="gender" value="female" required> Female 🙍‍♀️</label></td>
+                <td><label><input class="col2" type="radio" name="gender" value="male"> Male 🙍‍♂️</label></td>
+            </tr>
+            <tr>
+                <td><label for="dob">📅 Date of Birth</label></td>
+                <td><input class="col2" type="date" name="dod" id="dod" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">🌍 Country</label></td>
+                <td>
+                    <select class="col2" name="country" id="country" required>
+                        <option value="" disabled selected>Select a country</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="india">India</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input type="checkbox" name="agree" id="agree" required>
+        <label for="agree">Agree to Terms</label>
+        <input type="submit" name="submit" id="submit" value="submit ✅">       
+    </form>
+</body>
+</html>
