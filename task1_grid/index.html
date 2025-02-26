@@ -1,0 +1,79 @@
+<audio src=""></audio>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Grid Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Website 👋</h1>
+        <p>Fill in the following form</p>
+    </header>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="fullName">👤 Full Name</label>
+        <div>
+            <input type="text" name="fullName" id="fullName" placeholder="e.g Lama Zahi Naser">
+            <p class="error-message" data-default="Full name is required">Full name is required</p>
+        </div>
+
+        <label for="email">📧 Email</label>
+        <div>
+            <input type="email" name="email" id="email" placeholder="e.g. Lama@gmail.com">
+            <p class="error-message" data-default="Valid email is required">Valid email is required</p>
+        </div>
+
+        <label for="password">🔑 Password</label>
+        <div>
+            <input type="password" name="password" id="password">
+            <p class="error-message" data-default="Passwordis required">Password is required</p>
+        </div>
+
+        <label for="confirmPassword">🔑 Confirm Password</label>
+        <div>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+            <p class="error-message" data-default="Please confirm your passwordd">Please confirm your password</p>
+        </div>
+
+        <label for="dob">📅 Date of Birth</label>
+        <div>
+            <input type="date" name="dod" id="dod">
+            <p class="error-message" data-default="Birth date is required">Birth date is required</p>
+        </div>
+
+        <label for="country">🌍 Country</label>
+        <div>
+            <select name="country" id="country">
+                <option value="" disabled selected>Select a country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+            <p class="error-message" data-default="Please select a country">Please select a country</p>
+        </div>
+
+        <div class="gender-section">
+            <label><input type="radio" name="gender" value="female"> Female 🙍‍♀️</label>
+            <label><input type="radio" name="gender" value="male"> Male 🙍‍♂️</label>
+            <p class="error-message" data-default="Please select your gender">Please select your gender</p>
+        </div>
+        
+        <div class="full-width">
+            <div>    
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Agree to Terms</label>
+            </div>
+            <p class="error-message" data-default="You must agree to the terms">You must agree to the terms</p>
+        </div>
+        <input class="full-width" type="submit" name="submit" id="submit" value="submit">
+    </form>
+</body>
+
+</html>
